@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Start";
+}
+
+<h2>Enter your twitter login to make a collage.</h2>
+
+<p>
+    @using (Html.BeginForm("Index", "Collage"))
+    {
+        @Html.TextBox("login")
+        <input type="submit" value="Let's collage!" />
+    }
+</p>

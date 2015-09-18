@@ -1,0 +1,9 @@
+﻿@model byte[]
+
+
+@{
+    ViewBag.Title = "TwitterCollage";
+}
+
+<h2>Your TwitterCollage</h2>
+<img src="@String.Format("data:image/png;base64,{0}", Convert.ToBase64String(Model))" alt=""/>
